@@ -48,8 +48,8 @@
  
 
  foreach($maincode->find("//*[@id='employee_list']/tbody[1]/tr") as $element) {
-  echo $name = $element->find("td", 2)->plaintext;
-  echo '<br/>';
+  $no = $element->find("td", 1)->plaintext;
+  echo "$no..\n";
  } 
  
 
