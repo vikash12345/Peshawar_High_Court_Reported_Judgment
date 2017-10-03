@@ -44,11 +44,11 @@
  }
 
  $maincode = dlPage($MyWebsite);
- echo $maincode;
+ 
  
 
  foreach($maincode->find("//*[@id='employee_list']/tbody[1]/tr") as $element) {
-  $no = $element->find("td", 1)->plaintext;
+  $no = $element->find("td", 0)->plaintext;
   echo "$no..\n";
  } 
  
