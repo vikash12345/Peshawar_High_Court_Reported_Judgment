@@ -47,7 +47,7 @@
  
  
 
- foreach($maincode->find("//[@id='employee_list']/tbody/tr") as $element) {
+ foreach($maincode->find("//*[@id='employee_list']/tbody/tr") as $element) {
   
   
   
