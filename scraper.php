@@ -56,7 +56,7 @@
   $cat = $element->find("td", 6)->plaintext;
   $pdflink = $element->find("td/a", 7)->plaintext;
   $scjud = $element->find("td", 8)->plaintext;
- echo "$scstatus\n";
+ echo "$cat\n";
   
  } 
  
