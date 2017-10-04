@@ -48,7 +48,10 @@
  
 
  foreach($maincode->find("//*[@id='employee_list']/tbody[1]/tr") as $element) {
-  $case = $element->find("td", 1)->plaintext;
+  
+  
+  
+  $case = $element->find("td[1]", 0)->plaintext;
   $rem = $element->find("td", 2)->plaintext;
   $cit = $element->find("td", 3)->plaintext;
   $dd = $element->find("td", 4)->plaintext;
@@ -56,7 +59,7 @@
   $cat = $element->find("td", 6)->plaintext;
   $pdflink = $element->find("td/a", 7)->plaintext;
   $scjud = $element->find("td", 8)->plaintext;
- echo "$cat\n";
+ echo "$case\n";
   
  } 
  
