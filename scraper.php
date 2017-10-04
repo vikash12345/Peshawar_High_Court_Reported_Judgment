@@ -51,14 +51,14 @@
   
   
   
-  $case = $element->find("td[1]", 0)->plaintext;
-  $rem = $element->find("td", 2)->plaintext;
+  $case = $element->find("td", 0)->plaintext;
+ /* $rem = $element->find("td", 2)->plaintext;
   $cit = $element->find("td", 3)->plaintext;
   $dd = $element->find("td", 4)->plaintext;
   $scstatus = $element->find("td", 5)->plaintext;
   $cat = $element->find("td", 6)->plaintext;
   $pdflink = $element->find("td/a", 7)->plaintext;
-  $scjud = $element->find("td", 8)->plaintext;
+  $scjud = $element->find("td", 8)->plaintext; */
  echo "$case\n";
   
  } 
