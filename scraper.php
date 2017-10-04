@@ -48,8 +48,16 @@
  
 
  foreach($maincode->find("//*[@id='employee_list']/tbody[1]/tr") as $element) {
-  $no = $element->find("td", 0)->plaintext;
-  echo "$no..\n";
+  $case = $element->find("td", 1)->plaintext;
+  $rem = $element->find("td", 2)->plaintext;
+  $cit = $element->find("td", 3)->plaintext;
+  $dd = $element->find("td", 4)->plaintext;
+  $scstatus = $element->find("td", 5)->plaintext;
+  $cat = $element->find("td", 6)->plaintext;
+  $pdflink = $element->find("td/a", 7)->plaintext;
+  $scjud = $element->find("td", 8)->plaintext;
+ echo "$pdflink\n";
+  
  } 
  
 
