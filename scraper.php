@@ -51,7 +51,7 @@
   
   
   
-  $case = $element->find("td", 0)->plaintext;
+  $case = $element->find("td", 1)->plaintext;
  /* $rem = $element->find("td", 2)->plaintext;
   $cit = $element->find("td", 3)->plaintext;
   $dd = $element->find("td", 4)->plaintext;
