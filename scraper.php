@@ -54,16 +54,18 @@
    $f = $element->find("td", 5)->plaintext;
    $g = $element->find("td", 6)->plaintext;
    $h = $element->find("td/a", 0)->href;
-  	
- 
-scraperwiki::save_sqlite(array('no'), array('no' => $a
-                                            ,'case' => $b
-                                            ,'remarks' => $c
+  	/*
+   ,'remarks' => $c
                                             ,'citation' => $d
                                             ,'decision_date' => $e
                                             ,'sc_date' => $f
                                             ,'cate' => $g
-                                            ,'pdflink' => $h));
+                                            ,'pdflink' => $h
+ */
+ 
+scraperwiki::save_sqlite(array('no'), array('no' => $a
+                                            ,'case' => $b
+                                            ));
  }
 
 
