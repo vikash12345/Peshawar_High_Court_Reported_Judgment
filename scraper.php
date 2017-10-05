@@ -55,7 +55,7 @@
    $h = $element->find("td/a", 0)->href;
   	
   if($a  != "" || $a != null){
-	  echo " => $f\n";
+	  echo " => $e\n";
   $record = array( 'srno' =>$a, 
 		   'case' => $b,
 		   'remarks' => $c, 
