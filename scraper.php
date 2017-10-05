@@ -56,18 +56,11 @@
   	
   if($a  != "" || $a != null){
 	  echo " => $e\n";
-  $record = array( 'srno' =>$a, 
-		   'case' => $b,
-		   'remarks' => $c, 
-		   'citation' => $d, 
-		   'decision_date' => $e, 
-		   'scdate' => $f, 
-		   'cat' => $g, 
-		   'pdflink' => $h, 
-		   'site' => $MyWebsite);
+  $record = array( 'srno' =>$a
+		  );
 						
   
-             scraperwiki::save(array('srno','case','remarks','citation','decision_date','scdate','cat','pdflink','site'), $record);
+             scraperwiki::save(array('srno'), $record);
 
   }
  } 
