@@ -56,10 +56,8 @@
   	
  
 	  
-  $record = array( 'srno' =>$a
-		  );
-						
-          scraperwiki::save(array('srno'), $record);
+scraperwiki::save_sqlite(array('no'), array('no' => $a));
+
 
 
  } 
