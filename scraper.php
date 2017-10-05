@@ -54,10 +54,10 @@
    $g = $element->find("td", 6)->plaintext;
    $h = $element->find("td/a", 0)->href;
   	
- 
-	  
+ if($a != "" || $a != null)
+ {
 scraperwiki::save_sqlite(array('no'), array('no' => $a));
-
+ }
 
 
  } 
