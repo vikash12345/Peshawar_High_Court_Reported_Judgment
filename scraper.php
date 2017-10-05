@@ -45,8 +45,30 @@
  
 
  foreach($maincode->find("//*[@id='employee_list']/tbody[1]/tr") as $element) {
-   $name = $element->find("td", 0)->plaintext;
-   echo "$name\n";
+   $a = $element->find("td", 0)->plaintext;
+   $b = $element->find("td", 1)->plaintext;
+   $c = $element->find("td", 2)->plaintext;
+   $d = $element->find("td", 3)->plaintext;
+   $e = $element->find("td", 4)->plaintext;
+   $f = $element->find("td", 5)->plaintext;
+   $g = $element->find("td", 6)->plaintext;
+   $h = $element->find("td/a", 0)->href;
+  	
+  
+  $record = array( 'srno' =>$a, 
+		   'case' => $b,
+		   'remarks' => $c, 
+		   'citation' => $d, 
+		   'decision_date' => $e, 
+		   'scdate' => $f, 
+		   'cat' => $g, 
+		   'pdflink' => $h, 
+		   'site' => $MyWebsite);
+						
+  
+             scraperwiki::save(array('srno','case','remarks','citation','decision_date','scdate','cat','pdflink','site'), $record);
+
+  
  } 
  
 
