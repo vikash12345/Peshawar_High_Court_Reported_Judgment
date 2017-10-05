@@ -53,7 +53,7 @@
    $f = $element->find("td", 5)->plaintext;
    $g = $element->find("td", 6)->plaintext;
    $h = $element->find("td/a", 0)->href;
-  	echo "$b\n";
+  	echo "$h\n";
   
   $record = array( 'srno' =>$a, 
 		   'case' => $b,
