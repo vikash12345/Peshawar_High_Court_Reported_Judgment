@@ -65,7 +65,7 @@
                                             ,'pdflink' => $h
  */
 
-scraperwiki::save_sqlite(array('name'), array('name'=> $h));
+scraperwiki::save_sqlite(array('num'), array('num'=> $a,'casename'=> $b));
  
 
 
