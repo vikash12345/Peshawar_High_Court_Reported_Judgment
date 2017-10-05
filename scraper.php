@@ -45,8 +45,7 @@
  
 
  foreach($maincode->find("//*[@id='employee_list']/tbody[1]/tr") as $element) {
-  if($element != null)
-  {
+  
    $a = $element->find("td", 0)->plaintext;
    $b = $element->find("td", 1)->plaintext;
    $c = $element->find("td", 2)->plaintext;
@@ -67,7 +66,7 @@
  */
 
 scraperwiki::save_sqlite(array('case'), array('case'=> $c));
-  }
+ 
 
 
  } 
