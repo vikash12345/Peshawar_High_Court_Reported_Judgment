@@ -46,7 +46,7 @@
 
  foreach($maincode->find("//*[@id='employee_list']/tbody[1]/tr") as $element) {
    $name = $element->find("td", 1)->plaintext;
-   echo $name
+   echo $name;
  } 
  
 
