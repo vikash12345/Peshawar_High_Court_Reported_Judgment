@@ -64,9 +64,9 @@
                                             ,'cate' => $g
                                             ,'pdflink' => $h
  */
- if($element != null){
-scraperwiki::save_sqlite(array('no','case'), array('no' => $a,'case'=> $b));
- }
+
+scraperwiki::save_sqlite(array('no'), array('no' => $a,'case'=> $b));
+
 
 
  } 
