@@ -7,8 +7,6 @@
 //
 
  
- // require 'simple_html_dom.php';
-
  $cHeadres = array(
       'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
       'Accept-Language: en-US,en;q=0.5',
@@ -45,22 +43,10 @@
 
  $maincode = dlPage($MyWebsite);
  
- 
 
- foreach($maincode->find("//*[@id='employee_list']/tbody/tr") as $element) {
-  
-  
-  
-$case = $element->find("td", 1)->plaintext;
- /* $rem = $element->find("td", 2)->plaintext;
-  $cit = $element->find("td", 3)->plaintext;
-  $dd = $element->find("td", 4)->plaintext;
-  $scstatus = $element->find("td", 5)->plaintext;
-  $cat = $element->find("td", 6)->plaintext;
-  $pdflink = $element->find("td/a", 7)->plaintext;
-  $scjud = $element->find("td", 8)->plaintext; */
-
-  
+ foreach($maincode->find("//*[@id='employee_list']/tbody[1]/tr") as $element) {
+  echo $name = $element->find("td", 2)->plaintext;
+  echo '<br/>';
  } 
  
 
