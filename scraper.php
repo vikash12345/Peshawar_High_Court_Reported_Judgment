@@ -45,7 +45,7 @@
  
 
  foreach($maincode->find("//*[@id='employee_list']/tbody[1]/tr") as $element) {
-  if($element != null){
+  
    $a = $element->find("td", 0)->plaintext;
    $b = $element->find("td", 1)->plaintext;
    $c = $element->find("td", 2)->plaintext;
@@ -64,7 +64,7 @@
                                             ,'cate' => $g
                                             ,'pdflink' => $h
  */
- 
+ if($element != null){
 scraperwiki::save_sqlite(array('no','case'), array('no' => $a,'case'=> $b));
  }
 
