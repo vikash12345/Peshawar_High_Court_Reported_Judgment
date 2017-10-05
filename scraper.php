@@ -54,7 +54,7 @@
    $g = $element->find("td", 6)->plaintext;
    $h = $element->find("td/a", 0)->href;
   	echo "$g\n";
-  
+  if($a  != ""){
   $record = array( 'srno' =>$a, 
 		   'case' => $b,
 		   'remarks' => $c, 
@@ -68,7 +68,7 @@
   
              scraperwiki::save(array('srno','case','remarks','citation','decision_date','scdate','cat','pdflink','site'), $record);
 
-  
+  }
  } 
  
 
